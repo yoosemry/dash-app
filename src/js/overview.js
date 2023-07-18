@@ -4,7 +4,9 @@ const profileAvator = document.querySelector('.userImg img');
 const fullName = document.querySelector('.user h2');
 
 // reading data from local storage
-let userinformation = JSON.parse(localStorage.getItem('userInformation'))
+let userinformation = JSON.parse(localStorage.getItem('userInformation'));
+
+console.log(userinformation)
 
 // set profile image 
 profileAvator.attributes[0].textContent = userinformation.photo;

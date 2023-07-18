@@ -21,6 +21,7 @@ formLogin.addEventListener('submit', async (e) => {
         if (!userCheking) throw new Error('invaled username or password')
         loginBtn.value = 'loging ...'
         let userInformation = {
+            userId: userCheking.id,
             username: userCheking.username,
             name: userCheking.fullName,
             photo: userCheking.photo
